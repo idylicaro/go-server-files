@@ -7,15 +7,15 @@ assignees: ''
 
 ---
 
-#### Descrição
+#### Description
 Descrição clara e resumida a respeito da issue.
 
-#### Imagens
+#### Images
 ![Image Name](link)
-Imagem que descreve/representa a issue
+Images that describe/show the issue
 
 #### Tasks
-Subtarefas que estão inseridas dentro da issue atual
+Subtasks that are contained in this actual issue:
 - [ ] Task 1
 - [ ] Task 2
 - [ ] Task 3
