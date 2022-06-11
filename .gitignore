@@ -24,3 +24,6 @@ go.work
 ### Go Patch ###
 /vendor/
 /Godeps/
+
+### Temp folder to upload ###
+temp/**
