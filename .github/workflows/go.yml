@@ -23,5 +23,6 @@ jobs:
 
     - name: Run test coverage
       run: go test -race -coverprofile=coverage.out -covermode=atomic
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v2
+    - name: Codacy Coverage Reporter
+      uses: codacy/codacy-coverage-reporter-action@v1.3.0
+
