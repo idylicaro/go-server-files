@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// UploadFile uploads a files
 func UploadFile(c *gin.Context) {
 	name := c.PostForm("name")
 	email := c.PostForm("email")
@@ -15,7 +16,7 @@ func UploadFile(c *gin.Context) {
 	// Multipart form
 	form, err := c.MultipartForm()
 	if err != nil {
-		c.String(http.StatusBadRequest, "get form err: %s", err.Error())
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 	files := form.File["files"]
