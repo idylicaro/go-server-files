@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 #### Description
-Descrição clara e resumida a respeito da issue.
+Clear and concise description of the issue.
 
 #### Images
 ![Image Name](link)
