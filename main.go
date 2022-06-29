@@ -1,9 +1,11 @@
 package main
 
 import (
+	"log"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/idylicaro/go-server-files/controllers"
-	"net/http"
 )
 
 func main() {
@@ -23,5 +25,9 @@ func main() {
 			v1.POST("/upload", controllers.UploadFile)
 		}
 	}
-	router.Run(":8080")
+	err := router.Run(":8080")
+	if err != nil {
+		// TODO: handle error properly
+		log.Fatal(err)
+	}
 }
