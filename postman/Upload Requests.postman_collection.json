@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "e80156f1-34f2-45ce-abd4-65bada8bc01a",
+		"name": "Upload Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9167500"
+	},
+	"item": [
+		{
+			"name": "Upload a file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/home/idylicaro/Downloads/Momochi.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/welcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
